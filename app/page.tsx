@@ -43,7 +43,7 @@ export default function Home() {
           <h1 className="text-[52px] lg:text-[64px] xl:text-[96px] max-w-[640px] xl:max-w-[780px] mx-auto xl:ml-0 xl:mr-auto">
             <TouchableText text="Reintegrating Technology" />
           </h1>
-          <p className="text-[18px] mb-auto text-black/40 max-w-[320px] xl:max-w-[520px] mx-auto xl:ml-0 xl:mr-auto">A new era of technology is emerging, and it's time to embrace it. We can't be stuck in the stone age any longer.</p>
+          <p className="text-[18px] mb-auto text-black/40 max-w-[320px] xl:max-w-[520px] mx-auto xl:ml-0 xl:mr-auto">A new era of technology is emerging, and it&apost;s time to embrace it. We can&apost;t be stuck in the stone age any longer.</p>
         </div>
       </div>
 
