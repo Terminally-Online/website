@@ -40,7 +40,7 @@ export default function Home() {
 
       <div className="h-screen relative z-[20] bg-gradient-to-b xl:bg-gradient-to-r from-white to-transparent flex mx-auto xl:mx-20 flex flex-col xl:justify-center w-full">
         <div className="text-center xl:text-left mt-32 xl:mt-0 flex flex-col gap-4 items-start justify-center">
-          <h1 className="text-[52px] lg:text-[64px] xl:text-[96px] max-w-[780px] mx-auto xl:ml-0 xl:mr-auto">
+          <h1 className="text-[52px] lg:text-[64px] xl:text-[96px] max-w-[640px] xl:max-w-[780px] mx-auto xl:ml-0 xl:mr-auto">
             <TouchableText text="Reintegrating Technology" />
           </h1>
           <p className="text-[18px] mb-auto text-black/40 max-w-[320px] xl:max-w-[520px] mx-auto xl:ml-0 xl:mr-auto">A new era of technology is emerging, and it's time to embrace it. We can't be stuck in the stone age any longer.</p>
