@@ -71,7 +71,7 @@ const ShaderCanvas: React.FC<ShaderCanvasProps> = ({ fragmentShader }) => {
   return (
     <canvas
       ref={canvasRef}
-      className="overflow-visible fixed bottom-[-40%] xl:bottom-0 xl:right-[-50%] w-screen h-screen"
+      className="overflow-visible fixed bottom-[-30%] xl:bottom-0 xl:right-[-40%] w-full h-full"
     />
   );
 };

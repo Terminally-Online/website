@@ -16,7 +16,7 @@ export default function Home() {
     uniform float iTime;
     uniform vec3 iResolution;
 
-    #define MAX_LAYERS 6.0
+    #define MAX_LAYERS 4.0
 
     float Circle(vec2 p, float r) {
         return length(p)-r;
