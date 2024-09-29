@@ -1,3 +1,5 @@
+"use client"
+
 import { Logo } from "./components/Logo";
 import ShaderCanvas from "./components/ShaderCanvas";
 import { TouchableText } from "./components/TouchableText";
