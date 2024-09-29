@@ -9,7 +9,7 @@ interface ShaderCanvasProps {
 
 const ShaderCanvas: React.FC<ShaderCanvasProps> = ({ fragmentShader }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const [dimensions, setDimensions] = useState({ width: window?.innerWidth ?? 0, height: window?.innerHeight ?? 0 });
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -18,7 +18,7 @@ const ShaderCanvas: React.FC<ShaderCanvasProps> = ({ fragmentShader }) => {
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
     const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current, antialias: true });
     renderer.setSize(dimensions.width, dimensions.height);
-    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setPixelRatio(window?.devicePixelRatio ?? 0);
 
     const clock = new THREE.Clock();
 
