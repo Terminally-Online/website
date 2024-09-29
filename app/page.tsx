@@ -1,10 +1,17 @@
 "use client"
 
+import { useEffect, useState } from "react";
 import { Logo } from "./components/Logo";
 import ShaderCanvas from "./components/ShaderCanvas";
 import { TouchableText } from "./components/TouchableText";
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const fragmentShader = `
     uniform float iTime;
     uniform vec3 iResolution;
@@ -36,7 +43,7 @@ export default function Home() {
     }
   `;
 
-  if(typeof window === 'undefined') return null;
+  if(isClient === false) return null;
 
   return (
     <div className="relative">
