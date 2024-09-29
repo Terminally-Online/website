@@ -36,6 +36,8 @@ export default function Home() {
     }
   `;
 
+  if(typeof window === 'undefined') return null;
+
   return (
     <div className="relative">
       <Logo />
